@@ -611,7 +611,7 @@ See /help for help<br></h4>`);
                     // set modal header
                     $("#header").html("Fingerprint")
                     // set modal text
-                    $("#text").html(`Your fingerprint is: <pre>${fingerprint}</pre> Send this to your friend if they want to talk to you.`);
+                    $("#text").html(`Your fingerprint is: <pre>${DOMPurify.sanitize(fingerprint)}</pre> Send this to your friend if they want to talk to you.`);
                     // display modal
                     $("#modal1").modal("open");
                     return;
