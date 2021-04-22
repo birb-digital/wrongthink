@@ -29,6 +29,13 @@ wrongthink.me would not be possible without the following libraries:
 the fingerprint used for connection is derived from the SHA-512 hash of the public key. the fingerprint is converted into 8 words (with a word list of 256 words), allowing for 2^64 combinations. this makes it somewhat suitable for identity verification but **it is not recommended unless security is not a concern**.
 ### safety number
 the safety number is derived from `SHA512(xPublic + yPublic)`, where both keys are the identity keys of the peers. the hash is converted to 16 words (with a word list of 256 words), allowing for 128 bits of security. the order of the fingerprints is determined by the first byte of the public identity keys.
+### file uploading
+file uploading uses an extension to the double ratchet library we use. the steps are as follows:
+- take `encrypt(Base64(our random 32-byte file key))`
+- set the resulting object's `hasFile` property to true
+- set the resulting object's `file` property to a new object containing:
+  - the property `encrypted`: `Base64(raw_encrypt(file, our random 32-byte file key, nonce))`
+  - the property `nonce`: `Base64(our random 32-byte nonce)`
 
 ## custom clients
 custom clients are as easy as 1, 2, 3. just use PeerJS and use https://wrongthink.me:8080 as the PeerJS server. from there, you'll need to use [parabirb/double-ratchet](https://github.com/parabirb/double-ratchet) to handshake and send messages.
