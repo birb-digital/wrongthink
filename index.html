@@ -397,7 +397,7 @@ See /help for help<br></h4>`);
                         .computeMasterKey();
                     // set safety number to 16 words (128 bits)
                     // from nacl.hash(greatestFirstByte, leastFirstByte)
-                    safetyNumber = convertToWords(nacl.hash(new Uint8Array(theirIdentityKey > ourKeys.identityKey.publicKey ?
+                    safetyNumber = convertToWords(nacl.hash(new Uint8Array(theirIdentityKey[0] > ourKeys.identityKey.publicKey[0] ?
                         [...theirIdentityKey, ...ourKeys.identityKey.publicKey] : [...ourKeys.identityKey.publicKey, ...theirIdentityKey]
                     )).slice(0, 16));
                     // we've handshaked
@@ -420,7 +420,7 @@ See /help for help<br></h4>`);
                         .computeMasterKey();
                     // set safety number to 16 words (128 bits)
                     // from nacl.hash(greatestFirstByte, leastFirstByte)
-                    safetyNumber = convertToWords(nacl.hash(new Uint8Array(theirIdentityKey > ourKeys.identityKey.publicKey ?
+                    safetyNumber = convertToWords(nacl.hash(new Uint8Array(theirIdentityKey[0] > ourKeys.identityKey.publicKey[0] ?
                         [...theirIdentityKey, ...ourKeys.identityKey.publicKey] : [...ourKeys.identityKey.publicKey, ...theirIdentityKey]
                     )).slice(0, 16));
                     // we've handshaked
