@@ -1,5 +1,18 @@
 ![threat model](https://raw.githubusercontent.com/birb-digital/wrongthink/master/threat%20model.png)
 
+# collected data
+while you are using wrongthink.me, wrongthink must store certain pieces of data for it to work. this includes:
+
+* your ip address
+* your username
+* peerjs signaling data
+
+this data is deleted 60 seconds after you log off the service. in certain situations (debugging), wrongthink may also collect when your username connects and disconnects from the server. there is nothing else associated with this data, just the username.
+
+wrongthink.me's web server does not have any access logs.
+
+in the future, wrongthink.me will have a TURN server to relay data between two clients who cannot directly connect. the encrypted link is still maintained between both clients and wrongthink cannot see the traffic.
+
 # warranty
 no warranty is provided with this software. the security of your communications is not guaranteed.
 
