@@ -44,6 +44,11 @@ custom clients are as easy as 1, 2, 3. just use PeerJS and use https://wrongthin
 ## running it
 just open `index.html` in the browser of your choice.
 
+## terminology
+* arachat is the name of the wrongthink client
+* wrongthink2 is the messaging protocol
+* wrongthink is the name of the service
+
 ## misc
 `v2.0.html` is the old version of wrongthink2 which used OTRv3. it is now obsolete (NOT compatible with any new clients) and kept only for educational purposes. `v1.html` is the old version of wrongthink which was not E2EE. it is still usable with server `wss://wrongthink.me:9764` but not recommended. it is also kept only for educational purposes.
 
