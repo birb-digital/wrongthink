@@ -7,7 +7,7 @@ while you are using wrongthink.me, wrongthink must store certain pieces of data 
 * your username
 * peerjs signaling data
 
-this data is deleted 60 seconds after you log off the service. in certain situations (debugging), wrongthink may also collect when your username connects and disconnects from the server. there is nothing else associated with this data, just the username.
+this data is deleted 60 seconds after you log off the service and is not logged. in certain situations (debugging), wrongthink may log when your username connects and disconnects from the server.
 
 wrongthink.me's web server does not have any access logs.
 
