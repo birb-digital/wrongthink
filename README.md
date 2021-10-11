@@ -8,6 +8,7 @@ wrongthink chat v2:
 * is verifiable
 
 ### IMPORTANT: no warranty is provided with this software. you are using it at your own risk. please see [SECURITY.md](SECURITY.md) for more info
+### ALSO IMPORTANT: wrongthink.me must use certain data in order for the service to run properly. please see [SECURITY.md](SECURITY.md) for more info
 
 ## use
 * [bleeding edge](https://birb.digital/wrongthink)
