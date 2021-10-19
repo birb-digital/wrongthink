@@ -428,7 +428,7 @@ See /help for help<br></h4>`);
                     // if we've handshaked, decrypt the message
                     let msg = await session.decrypt(data);
                     // append <anon> msg to terminal
-                    $("#terminal").append("&lt;anon&gt; " + DOMPurify.sanitize(twemoji.parse(md.render(msg.cleartext))) + "<br>");
+                    $("#terminal").append(`&lt;${DOMPurify.sanitize(conn.peer)}&gt; ` + DOMPurify.sanitize(twemoji.parse(md.render(msg.cleartext))) + "<br>");
                     // scroll to bottom of terminal
                     scrollToBottom("terminal");
                 }
