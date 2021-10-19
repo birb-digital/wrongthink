@@ -14,9 +14,6 @@ or parabirb#9968
 
 <head>
     <meta charset="utf-8">
-    <link type="application/json+oembed"
-          href="https://embeds.ga/api/oembed.php?provider_name=&provider_url=&author_name=birb.digital+team&author_url=https%3A%2F%2Fbirb.digital"
-          crossorigin="anonymous">
     <meta property="og:title" content="wrongthink.me">
     <meta name="twitter:title" content="wrongthink.me">
     <meta name="theme-color" content="#0277bd">
@@ -474,7 +471,12 @@ See /help for help<br></h4>`);
         peer = new Peer(fingerprint, {
             "host": "wrongthink.me",
             "port": 8080,
-            "secure": true
+            "secure": true,
+            "config": {
+                "iceServers": [{
+                    "urls": "turn:wrongthink.me:6969"
+                }]
+            }
         });
         // when the peer is ready
         peer.on("open", (id) => {
