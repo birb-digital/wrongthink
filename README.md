@@ -14,6 +14,8 @@ wrongthink chat v2:
 * [bleeding edge](https://birb.digital/wrongthink)
 * [stable](https://wrongthink.me)
 
+the bleeding edge version is based off the latest commit made, while the stable version is the last tested version. the stable version may receive updates later than the bleeding edge version, but the stable version is guaranteed to work.
+
 ## credits
 wrongthink.me would not be possible without the following libraries:
 * [TweetNaCl.js (cryptography)](https://github.com/dchest/tweetnacl-js) and [its](https://github.com/dchest/tweetnacl-util-js) [addons](https://github.com/dchest/tweetnacl-auth-js)
