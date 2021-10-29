@@ -60,3 +60,5 @@ just open `index.html` in the browser of your choice.
 ```
 
 no warranty is provided with this software. please read [SECURITY.md](SECURITY.md) for more information. please read our [code of conduct](CODE_OF_CONDUCT.md) before contributing.
+
+lol
