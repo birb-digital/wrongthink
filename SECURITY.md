@@ -11,7 +11,7 @@ this data is deleted 60 seconds after you log off the service and is not logged.
 
 wrongthink.me's web server does not have any access logs.
 
-in the future, wrongthink.me will have a TURN server to relay data between two clients who cannot directly connect. the encrypted link is still maintained between both clients and wrongthink cannot see the traffic.
+wrongthink.me uses a TURN server to relay data between two clients who cannot directly connect. the encrypted link is still maintained between both clients and wrongthink cannot see the traffic.
 
 notes:
 * logging off is defined as closing the tab
