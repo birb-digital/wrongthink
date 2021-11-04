@@ -496,13 +496,9 @@ See /help for help<br></h4>`);
         // on connection, let onConn() handle it
         peer.on("connection", (conn) => onConn(conn, false));
     };
-    // if storage is available
-    if (storageAvailable("localStorage")) {
-        // if there's a custom fingerprint saved, init peer with the fingerprint
-        if (localStorage.getItem("fingerprint")) peerInit(localStorage.getItem("fingerprint"));
-        // otherwise, init it without
-        else peerInit();
-    } else peerInit();
+    // if storage is available and there's a custom fingerprint saved, init the peer with the fingerprint
+    if (storageAvailable("localStorage") && localStorage.getItem("fingerprint")) peerInit(localStorage.getItem("fingerprint"));
+    else peerInit();
     // ^ no storage? just init it without
     // on message, async because of axolotl
     const message = async () => {
