@@ -1,5 +1,7 @@
 # wrongthink
 
+### THIS SOFTWARE IS VULNERABLE TO KCI AND SHOULD NOT BE USED WITHOUT PROPER PRECAUTIONS UNTIL THE REMOVAL OF THIS NOTICE.
+
 wrongthink chat v2:
 * is peer-to-peer
 * has end-to-end encryption (Double Ratchet over DTLS (WebRTC))
